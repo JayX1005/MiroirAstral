@@ -1,0 +1,179 @@
+/* Styles généraux pour le corps de la page et la section Horoscope */
+body {
+    font-family: "kepler std regular", serif; /* Police de base pour le corps */
+    background-color: #f8f8f8; /* Une couleur de fond légère pour toute la page */
+    margin: 0;
+    padding: 0;
+}
+
+#Horo {
+    padding: 60px 0; /* Plus d'espace autour du contenu de la section */
+    /* Vous pouvez ajouter une image de fond ici si vous le souhaitez pour la section */
+    /* background-image: url('assets/img/background-horo.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+/* Styles pour le titre principal de la page */
+h1 {
+    color: #000000;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 28px; /* Légèrement plus grand pour le titre principal */
+    letter-spacing: 2px; /* Pour un look plus espacé */
+}
+
+/* Styles pour l'image du signe astrologique */
+#sign-image {
+    max-width: 120px; /* Taille légèrement augmentée pour un impact visuel */
+    height: auto;
+    margin: 0 auto 20px auto; /* Centrage et espace sous l'image */
+    display: block; /* S'assure que margin: auto fonctionne pour le centrage */
+    border-radius: 50%; /* Pour une forme ronde si vous le souhaitez */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Ombre plus prononcée */
+    transition: transform 0.3s ease-in-out; /* Ajoute une transition pour les effets hover */
+}
+
+/* Règle pour l'effet de survol sur l'image du signe */
+#sign-image:hover {
+    transform: scale(1.05); /* Effet de zoom léger au survol */
+}
+
+/* Styles pour la boîte de la newsletter */
+.newsletter-box { /* Renommé de .newsletter à .newsletter-box pour éviter les conflits */
+    max-width: 700px; /* Augmenté légèrement pour un meilleur agencement du texte */
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffffec; /* Plus opaque pour une meilleure lisibilité, mais toujours un peu transparent */
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Ombre plus profonde */
+    font-family: "kepler std regular", serif;
+    line-height: 1.7; /* Améliore la lisibilité du texte des paragraphes */
+    color: #333333; /* Couleur de texte par défaut pour la newsletter */
+}
+
+/* Styles pour le titre à l'intérieur de la newsletter-box */
+.newsletter-box h2 {
+    color: #cda45e; /* Couleur plus foncée pour le contraste */
+    margin-bottom: 30px; /* Plus d'espace sous le titre */
+    text-align: center;
+    font-family: "Mencken std regular", Georgia, serif; /* Assurez-vous d'avoir cette police ou utilisez une alternative */
+    text-transform: uppercase;
+    font-size: 42px; /* Ajusté légèrement */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0; /* Une ligne de séparation subtile */
+    line-height: 1.2;
+}
+
+/* Styles pour les sous-titres à l'intérieur du contenu de la newsletter (si vos newsletters en ont) */
+.newsletter-box h3 {
+    color: #000000;
+    font-family: "komet regular SC", sans-serif; /* Assurez-vous d'avoir cette police ou utilisez une alternative */
+    margin-top: 25px; /* Espace au-dessus des sous-titres */
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-bottom: 1px dashed #e5e5e5; /* Ligne pointillée pour les sous-titres */
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styles pour le contenu de la newsletter */
+#newsletter-container {
+    padding-top: 10px; /* Espace au-dessus du contenu réel de la newsletter */
+    text-align: left; /* Le contenu de la newsletter doit être aligné à gauche pour une meilleure lisibilité */
+}
+
+#newsletter-container p {
+    margin-bottom: 1em; /* Espace entre les paragraphes du contenu */
+    color: #000000; /* Vous aviez indiqué #444, je suis revenu à #000000 selon votre dernière version */
+    font-size: 18px;
+    font-family: "Program OT book";
+}
+
+
+/* Styles spécifiques pour le paragraphe avec la classe 'mantra' */
+#newsletter-container p.mantra { /* Cible le paragraphe AVEC la classe mantra DANS la newsletter-box */
+  color: #cda45e; /* Exemple: Changer la couleur pour correspondre à tes accents dorés */
+  font-size: 30px; /* Exemple: Le rendre un peu plus grand */
+  font-style: italic; /* Exemple: Mettre le texte en italique */
+  font-weight: bold; /* Exemple: Le rendre gras */
+text-align: center;
+margin-top: 50px;
+}
+
+#newsletter-container ul {
+    padding-left: 25px; /* Indentation des listes */
+    margin-bottom: 1em;
+}
+
+#newsletter-container li {
+    margin-bottom: 0.5em; /* Espace entre les éléments de liste */
+}
+
+/* Styles pour le spinner de chargement */
+#loading-spinner {
+    text-align: center;
+    padding: 30px; /* Plus d'espace autour du spinner */
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+#loading-spinner img {
+    width: 60px; /* Un peu plus grand pour être bien visible */
+    height: auto;
+    animation: spin 1.5s linear infinite; /* Animation de rotation */
+}
+
+#loading-spinner p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Animation de rotation pour le spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ajouts pour les polices personnalisées si elles ne sont pas déjà importées */
+/*
+@font-face {
+    font-family: 'kepler std regular';
+    src: url('path/to/kepler-std-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('path/to/PlayfairDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'oskar two regular';
+    src: url('path/to/oskar-two-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'komet bold SC';
+    src: url('path/to/komet-bold-SC.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'program OT book';
+    src: url('path/to/program-OT-book.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
