@@ -1,8 +1,5 @@
 /**
-* Template Name: Restaurantly - v3.1.0
-* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+miroirastral.com // main
 */
 (function() {
   "use strict";

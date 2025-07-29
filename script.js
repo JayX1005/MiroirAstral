@@ -202,4 +202,50 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    // --- Injection dynamique du JSON-LD pour SEO ---
+    (function() {
+        const params = new URLSearchParams(window.location.search);
+        const signe = params.get("signe") || "belier";
+        const periode = params.get("periode") || "daily";
+
+        const periodeLabel = {
+            daily: "du jour",
+            tomorrow: "de demain",
+            weekly: "de la semaine",
+            monthly: "du mois",
+            seasonal: "de la saison",
+            yearly: "de l'année"
+        }[periode];
+
+        const title = `Horoscope ${periodeLabel} pour ${signe.charAt(0).toUpperCase() + signe.slice(1)}`;
+        const description = `Découvrez votre horoscope ${periodeLabel} complet pour ${signe.charAt(0).toUpperCase() + signe.slice(1)} : amour, travail, finances et énergie astrale.`;
+
+        const jsonLD = {
+            "@context": "https://schema.org",
+            "@type": "Horoscope",
+            "name": title,
+            "description": description,
+            "datePublished": new Date().toISOString().split("T")[0],
+            "sign": signe.charAt(0).toUpperCase() + signe.slice(1),
+            "date": new Date().toISOString().split("T")[0],
+            "inLanguage": "fr",
+            "publisher": {
+                "@type": "Organization",
+                "name": "Miroir Astral",
+                "url": "https://www.miroirastral.com",
+                "logo": "https://www.miroirastral.com/assets/img/logo/L7.png"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://www.miroirastral.com/horoscope.html?signe=${signe}&periode=${periode}`
+            }
+        };
+
+        const scriptTag = document.createElement("script");
+        scriptTag.type = "application/ld+json";
+        scriptTag.text = JSON.stringify(jsonLD);
+        document.head.appendChild(scriptTag);
+    })();
+
 });

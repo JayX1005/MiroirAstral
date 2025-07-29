@@ -1,65 +1,441 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.miroirastral.com/</loc>
-    <lastmod>2025-07-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
     <loc>https://www.miroirastral.com/horoscope.html</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/carriere-mission-de-vie.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=monthly</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/developpement-personnel.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=seasonal</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/reconnexion-deconnexion.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=belier&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=monthly</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/technologie-usage-numerique.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=seasonal</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/timing-opportunites.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=taureau&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=monthly</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/vie-sociale.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=seasonal</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
-    <loc>https://www.miroirastral.com/voyage-deplacements.html</loc>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=gemeaux&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=monthly</loc>
     <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=cancer&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=lion&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=vierge&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=balance&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=scorpion&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=sagittaire&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=capricorne&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=verseau&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=daily</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=tomorrow</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=weekly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=monthly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=seasonal</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.miroirastral.com/horoscope.html?signe=poissons&periode=yearly</loc>
+    <lastmod>2025-07-29</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>
