@@ -92,8 +92,9 @@ h1 {
 #newsletter-container p {
     margin-bottom: 1em; /* Espace entre les paragraphes du contenu */
     color: #000000; /* Vous aviez indiqué #444, je suis revenu à #000000 selon votre dernière version */
-    font-size: 18px;
-    font-family: "Program OT book";
+    font-size: 20px;
+    font-family: "Hero", sans-serif;
+    font-weight: normal;
 }
 
 
@@ -135,7 +136,7 @@ margin-top: 50px;
 #loading-spinner p {
     margin-top: 15px;
     font-size: 16px;
-    color: #666;
+    color: #667;
 }
 
 /* Animation de rotation pour le spinner */

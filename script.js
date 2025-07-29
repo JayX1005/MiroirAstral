@@ -63,6 +63,24 @@ document.addEventListener("DOMContentLoaded", function () {
         if (horoscopeTitleSpan) {
             let displayedSign = signe.charAt(0).toUpperCase() + signe.slice(1);
             let displayedPeriode = "";
+
+
+// --- Mise à jour dynamique du <title> et <meta description> ---
+const pageTitle = `Horoscope ${displayedPeriode} pour ${displayedSign} - ${new Date().toLocaleDateString('fr-FR')}`;
+document.title = pageTitle;
+
+let metaDesc = document.querySelector('meta[name="description"]');
+if (metaDesc) {
+    metaDesc.setAttribute(
+        "content",
+        `Découvrez l'horoscope ${displayedPeriode} du ${new Date().toLocaleDateString('fr-FR')} pour ${displayedSign} : amour, travail, finances et conseils cosmiques.`
+    );
+}
+
+
+
+
+
             switch (periode) {
                 case "daily":
                     displayedPeriode = "du jour";
