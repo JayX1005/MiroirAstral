@@ -1,0 +1,22 @@
+# robots.txt - Miroir Astral
+User-agent: *
+# Autoriser tout le site sauf zones techniques
+Allow: /
+
+# Bloquer les répertoires techniques
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /private/
+
+# Bloquer les paramètres d'URL inutiles pour le SEO
+Disallow: /*?s=*
+Disallow: /*?utm=*
+Disallow: /*?sort=*
+
+# Autoriser les ressources critiques JS et CSS
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/img/
+
+# Déclarer le sitemap
+Sitemap: https://www.miroirastral.com/sitemap.xml
