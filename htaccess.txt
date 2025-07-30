@@ -1,0 +1,4 @@
+# .htaccess - Forcer HTTPS pour Miroir Astral
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.miroirastral.com/$1 [R=301,L]
