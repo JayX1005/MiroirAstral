@@ -1966,3 +1966,79 @@ section {
   font-family:serif;
   font-style: normal;
 }
+
+
+/*
+=====================================================
+#SOUS-MENU MOBILE LARGE
+=====================================================
+*/
+
+/* On cible le conteneur du sous-menu (jour, semaine, etc.) */
+.navbar-mobile .dropdown ul {
+  /* On ne met une marge qu'à gauche pour l'indentation,
+     mais on lui laisse toute la largeur disponible à droite ! */
+  margin: 5px 0 15px 15px;
+
+  /* On retire le padding de base pour un contrôle total */
+  padding: 0;
+
+  /* On s'assure qu'il n'y a pas d'ombre ou de bordure qui gêne */
+  box-shadow: none;
+  border: none;
+
+  /* On met un fond légèrement différent pour le voir */
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* On cible les liens (les options) DANS ce sous-menu */
+.navbar-mobile .dropdown ul a {
+  /* C'est la ligne la plus importante :
+     Le lien devient un bloc qui prend 100% de la largeur.
+     Toute la zone devient cliquable, pas seulement le texte ! */
+  display: block;
+  width: 100%;
+
+  /* On met un padding généreux pour une grande zone de clic */
+  padding: 12px 20px;
+
+  /* On s'assure que la couleur du texte est bien visible */
+  color: #333;
+  font-weight: 600;
+}
+
+/* On ajoute un effet visuel quand on touche une option */
+.navbar-mobile .dropdown ul a:hover {
+  background-color: #cda45e2b;
+  color: #fff;
+}
+
+
+
+/*
+=========================================================
+# Correction Superposition Navbar / Contenu (Mobile)
+=========================================================
+*/
+@media (max-width: 991px) {
+
+  /* Étape 1 : On remonte la barre de navigation tout en haut de l'écran.
+     On annule le décalage qui était prévu pour la version ordinateur. */
+  #header {
+    top: 0;
+  }
+
+  /* Étape 2 (Optionnel mais recommandé) : On cache la petite barre noire
+     tout en haut (topbar) qui est souvent vide sur mobile. */
+  #topbar {
+    display: none;
+  }
+
+  /* Étape 3 : On pousse le contenu principal (vos articles) vers le bas.
+     Cette règle ajoute un espace en haut de la section <main>
+     pour qu'elle ne commence pas sous la barre de navigation. */
+  main#main {
+    padding-top: 90px; /* Vous pouvez ajuster cette valeur (ex: 80px ou 100px) si besoin */
+  }
+}

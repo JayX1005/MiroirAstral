@@ -1,49 +1,95 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionnez à la fois le conteneur du menu (pour la section "Menu")
-    const menuContainer = document.querySelector("#menu .menu-container > .row.menu-container");
-    // ET la barre de navigation (pour l'en-tête)
-    const navbar = document.getElementById("navbar");
+document.addEventListener('DOMContentLoaded', () => {
 
-    // Fonction générique pour gérer le clic et la redirection
-    function handleHoroscopeClick(event) {
-        // Remonte jusqu'à l'élément <a> le plus proche qui a data-periode
-        const clickedLink = event.target.closest('a[data-periode]');
+    /**
+     * ### Logique pour le Menu Principal (les icônes) ###
+     *
+     * Cette partie gère les clics dans la grille des signes du zodiaque.
+     * Elle trouve le filtre actif (jour, semaine...) pour déterminer la période.
+     */
+    const menuSection = document.querySelector('#menu');
+    if (menuSection) {
+        menuSection.addEventListener('click', (event) => {
+            // Cible le lien <a> qui contient un attribut data-signe
+            const link = event.target.closest('a[data-signe]');
+            
+            // Si on n'a pas cliqué sur un lien de signe, on arrête
+            if (!link) {
+                return;
+            }
 
-        if (clickedLink) {
-            event.preventDefault(); // Empêche la navigation par défaut
+            // On empêche la navigation par défaut pour construire notre propre URL
+            event.preventDefault();
 
-            const periode = clickedLink.dataset.periode;
-            let signe = null;
+            // 1. On récupère le signe du lien cliqué
+            const signe = link.dataset.signe;
 
-            // Pour trouver le signe, nous devons remonter à l'élément parent qui contient data-signe
-            // Dans la navbar, c'est le <a> parent direct du <ul>, ou son <li> parent pour la structure
-            const parentDropdownLi = clickedLink.closest('li.dropdown'); // Remonte au li.dropdown
+            // 2. On trouve le filtre actif pour déterminer la période
+            const activeFilter = document.querySelector('#menu-flters .filter-active');
+            let periode = 'daily'; // Période par défaut au cas où
 
-            if (parentDropdownLi) {
-                // Cherche le <a> qui a l'attribut data-signe à l'intérieur de ce li.dropdown
-                const signeLink = parentDropdownLi.querySelector('a[data-signe]');
-                if (signeLink) {
-                    signe = signeLink.dataset.signe;
+            if (activeFilter) {
+                const filterValue = activeFilter.dataset.filter.replace('.filter-', '');
+                switch (filterValue) {
+                    case 'jour':
+                        periode = 'daily';
+                        break;
+                    case 'demain':
+                        periode = 'tomorrow';
+                        break;
+                    case 'semaine':
+                        periode = 'weekly';
+                        break;
+                    case 'annee':
+                        periode = 'yearly';
+                        break;
                 }
             }
 
+            // 3. On construit l'URL et on redirige
             if (signe && periode) {
-                const redirectUrl = `horoscope.html?signe=${signe}&periode=${periode}`;
-                console.log("Redirection vers :", redirectUrl);
-                window.location.href = redirectUrl; // Redirige le navigateur
-            } else {
-                console.warn("Impossible de déterminer le signe ou la période pour la redirection depuis la navbar ou le menu.");
+                const url = `horoscope.html?signe=${signe}&periode=${periode}`;
+                window.location.href = url;
             }
-        }
+        });
     }
 
-    // Ajoutez l'écouteur d'événements à la section "Menu" si elle existe
-    if (menuContainer) {
-        menuContainer.addEventListener("click", handleHoroscopeClick);
-    }
-
-    // Ajoutez l'écouteur d'événements à la barre de navigation si elle existe
+    /**
+     * ### Logique pour la Barre de Navigation (le menu déroulant) ###
+     *
+     * Cette partie gère les clics dans le menu déroulant en haut de la page.
+     * Elle trouve le signe en remontant dans la structure du menu.
+     */
+    const navbar = document.getElementById('navbar');
     if (navbar) {
-        navbar.addEventListener("click", handleHoroscopeClick);
+        navbar.addEventListener('click', (event) => {
+            // Cible le lien qui contient une période (jour, semaine...)
+            const periodLink = event.target.closest('a[data-periode]');
+            
+            // Si on n'a pas cliqué sur un lien de période, on arrête
+            if (!periodLink) {
+                return;
+            }
+
+            event.preventDefault();
+
+            // 1. On récupère la période du lien cliqué
+            const periode = periodLink.dataset.periode;
+            let signe = null;
+
+            // 2. On trouve le signe en remontant au parent "dropdown"
+            const parentDropdown = periodLink.closest('li.dropdown');
+            if (parentDropdown) {
+                const signLink = parentDropdown.querySelector('a[data-signe]');
+                if (signLink) {
+                    signe = signLink.dataset.signe;
+                }
+            }
+            
+            // 3. On construit l'URL et on redirige
+            if (signe && periode) {
+                const url = `horoscope.html?signe=${signe}&periode=${periode}`;
+                window.location.href = url;
+            }
+        });
     }
 });
