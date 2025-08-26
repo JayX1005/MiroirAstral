@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Découvrez le Voyage de Votre Signe Astrologique
+Ton compagnon de voyage à travers les étoiles
+Horoscopes</title>
+  <meta name="description" content="Plongez dans l'univers des 12 signes du zodiaque avec Miroir Astral. Obtenez vos prévisions astrales quotidiennes, hebdomadaires et annuelles pour mieux comprendre votre chemin de vie.">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+ <style>
+        /* Styles spécifiques pour cette page, si nécessaire */
+        .content-box {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 30px;
+            background-color: #ffffffd0;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            font-family: "kepler std regular", serif;
+            line-height: 1.8;
+            color: #000000;
+        }
+        .content-box h1 {
+            text-align: center;
+            color: #31011b;
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        .content-box h2 {
+            color: #000000;
+            font-family: "oskar two regular", sans-serif;
+            font-size: 32px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .content-box h3 {
+            color: #ffffff;
+            font-family: "komet bold SC", sans-serif;
+            font-size: 24px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+        .content-box p {
+            margin-bottom: 1em;
+            font-size: 1.4em;
+        }
+        .content-box li {
+          font-size: 1.2em;
+        }
+        .sign-advice {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #d0a8b9;
+            border-radius: 8px;
+        }
+        .sign-advice h4 {
+            color: #31011b;
+            font-family: "oskar two regular", sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .sign-advice p {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+      
+      </div>
+
+      
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo/L7.png" alt="" class="img-fluid"></a>
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html"><span></span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+          
+          
+          <li class="dropdown"><a href="#"><span>Horoscope</span> 
+           <i class="bi bi-chevron-down"></i>
+          </a>
+            <ul>
+
+              <li class="dropdown"><a href="#" data-signe="belier"><span>Bélier</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li> 
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li> 
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="taureau"><span>Taureau</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="gemeaux"><span>Gémeaux</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="cancer"><span>Cancer</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="lion"><span>Lion</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="vierge"><span>Vierge</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="balance"><span>Balance</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="scorpion"><span>Scorpion</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="sagittaire"><span>Sagittaire</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="capricorne"><span>Capricorne</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="verseau"><span>Verseau</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+              <li class="dropdown"><a href="#" data-signe="poissons"><span>Poissons</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#" data-periode="daily">jour</a></li>
+                        <li><a href="#" data-periode="tomorrow">lendemain</a></li>
+                        <li><a href="#" data-periode="weekly">Semaine</a></li>
+                        <li><a href="#" data-periode="monthly">mois</a></li>
+                        <li><a href="#" data-periode="seasonal">Saison</a></li>
+                        <li><a href="#" data-periode="yearly">Année</a></li>
+                    </ul>
+                </li>
+
+
+              </ul>
+          </li>
+
+
+          <li><a class="nav-link scrollto" href="index.html#why-us">Dossiers</a></li>
+          <li><a class="nav-link scrollto" href="index.html#specials">Influence</a></li>
+          <li><a class="nav-link scrollto" href="index.html#events">Les evenements à venir</a></li>
+          <li><a class="nav-link scrollto" href="index.html#testimonials">Citations</a></li>
+          <li><a class="nav-link scrollto" href="index.html#gallery">La Gallerie du jour</a></li>
+          <li><a class="nav-link scrollto" href="index.html#chefs">Points de vue</a></li>
+
+
+      </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      
+      <!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  
+
+
+
+
+
+<!-- ======= Horo Section ======= -->
+  
+  <main id="main">
+   
+    <section id="Horo" class="Horo">
+      
+  <title>Horoscope
+     
+  </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Ajout rapide si style.css n’est pas encore chargé */
+    .newsletter-box {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #ffffff53;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      
+      font-family: "kepler std regular", serif;
+    }
+ 
+    .newsletter-box h2 {
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-align : center;
+      font-size: 20px;
+    }
+
+    .newsletter {
+      padding-top: 10px;
+    }
+
+
+  .image-centree {
+    display: block; /* Indispensable pour que les marges automatiques fonctionnent sur une image */
+    margin-left: auto; /* Marge automatique à gauche */
+    margin-right: auto; /* Marge automatique à droite */
+    max-width: 60%; /* S'assure que l'image reste responsive */
+    height: auto;
+  }
+  .image-centree2 {
+    display: block; /* Indispensable pour que les marges automatiques fonctionnent sur une image */
+    margin-left: auto; /* Marge automatique à gauche */
+    margin-right: auto; /* Marge automatique à droite */
+    max-width: 100%; /* S'assure que l'image reste responsive */
+    height: auto;
+  }
+  
+  
+  
+  
+
+  </style>
+
+
+
+
+<body>
+    <div class="content-box">
+        <h1>Découvrez le Voyage de Votre Signe Astrologique</h1>
+                <h2>Ton compagnon de voyage à travers les étoiles</h2>
+
+        
+
+        
+<div class="article-illustration">
+          <figure>
+              <img src="assets/img/dossier/horoscope1.jpg"  alt="" class="image-centree2">
+              
+          </figure>
+</div>
+
+        
+
+        <!-- Section de contenu sur l'astrologie -->
+        <section id="about-astrology" class="about-astrology">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 content">
+                        <h2>L'Astrologie, un Outil de Connaissance de Soi</h2>
+                        <p>
+                            L'astrologie est bien plus que de simples prédictions ; c'est un miroir qui reflète votre potentiel, vos défis et les opportunités qui s'offrent à vous. En consultant régulièrement vos prévisions, vous développez votre intuition et votre capacité à surfer sur les vagues de la vie avec plus de conscience et de sérénité.
+                        </p>
+                        <p>
+                            Pour approfondir votre exploration, n'hésitez pas à consulter nos dossiers thématiques.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Nouvelle section sur l'histoire des horoscopes -->
+        <section id="histoire-horoscope">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 content">
+                        <h2>Petite histoire de l'horoscope</h2>
+                        <p>
+                            L'astrologie et la conception de l'horoscope remontent à des milliers d'années, trouvant leurs racines dans les civilisations anciennes de Mésopotamie (principalement les Babyloniens), qui ont été les premières à observer et à documenter les mouvements des corps célestes. Pour eux, le cosmos était un livre ouvert, et les positions des étoiles et des planètes étaient des signes divins qui influençaient les affaires humaines et les événements terrestres.
+                        </p>
+                        <p>
+                            Plus tard, les Grecs ont emprunté ces connaissances et les ont enrichies avec leur propre vision philosophique et mythologique, créant le concept du zodiaque tel que nous le connaissons aujourd'hui. L'astrologie a ensuite voyagé vers l'Égypte hellénistique, où elle s'est mêlée à l'astronomie et à la magie, avant de se propager dans l'Empire romain. Au Moyen Âge et à la Renaissance, l'astrologie était une science respectée, consultée par les rois, les savants et les médecins.
+                        </p>
+                        <p>
+                            Aujourd'hui, l'horoscope est devenu un phénomène mondial, un point de contact quotidien avec le cosmos pour des millions de personnes. Il reste un pont entre le passé et le présent, une tradition qui perdure à travers les âges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+<div class="article-illustration">
+          <figure>
+              <img src="assets/img/dossier/horoscope_ch1.jpg"  alt="" class="image-centree2">
+              
+          </figure>
+</div>
+
+        <!-- Nouvelle section sur l'horoscope chinois -->
+          <section id="horoscope-chinois">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 content">
+                        <h2>Horoscope chinois : Une autre façon de se connecter</h2>
+                        <p>
+                            En parallèle de l'astrologie occidentale, l'astrologie chinoise offre une perspective fascinante sur la personnalité et le destin. Basée sur un cycle de 12 ans, chaque année est associée à un animal qui possède ses propres caractéristiques et qualités. Au lieu de se fonder sur le mois de naissance, l'horoscope chinois est déterminé par l'année de naissance.
+                        </p>
+                        <p>
+                            Les 12 signes de l'horoscope chinois sont : le Rat, le Bœuf, le Tigre, le Lapin, le Dragon, le Serpent, le Cheval, la Chèvre, le Singe, le Coq, le Chien et le Cochon. Chaque animal est également associé à l'un des cinq éléments (Métal, Eau, Bois, Feu, Terre), créant un système riche et complexe qui reflète une vision holistique de la vie.
+                        </p>
+                        <h3>Les 12 Signes Animaux du Zodiaque Chinois</h3>
+                        <p>
+                            Chaque signe du zodiaque chinois est associé à un animal qui, selon la légende, a été choisi par l'Empereur de Jade après une course céleste. Chaque animal possède des traits de caractère spécifiques :
+                        </p>
+                        <ul>
+                            <li><strong>Le Rat</strong> : Intelligent, astucieux et ambitieux.</li>
+                            <li><strong>Le Bœuf</strong> : Travailleur, fiable et persévérant.</li>
+                            <li><strong>Le Tigre</strong> : Courageux, compétitif et imprévisible.</li>
+                            <li><strong>Le Lapin</strong> : Sensible, compatissant et élégant.</li>
+                            <li><strong>Le Dragon</strong> : Charismatique, puissant et chanceux.</li>
+                            <li><strong>Le Serpent</strong> : Intuitif, sage et discret.</li>
+                            <li><strong>Le Cheval</strong> : Énergique, indépendant et aventureux.</li>
+                            <li><strong>La Chèvre</strong> : Douce, créative et artistique.</li>
+                            <li><strong>Le Singe</strong> : Esprit vif, curieux et malicieux.</li>
+                            <li><strong>Le Coq</strong> : Observateur, travailleur et confiant.</li>
+                            <li><strong>Le Chien</strong> : Loyal, honnête et protecteur.</li>
+                            <li><strong>Le Cochon</strong> : Généreux, tolérant et joyeux.</li>
+                        </ul>
+                        <h3>Les Cinq Éléments</h3>
+                        <p>
+                            Le cycle des signes animaux est combiné avec un cycle de cinq éléments, qui se répètent tous les dix ans. Chaque élément apporte une nuance supplémentaire aux caractéristiques du signe animal.
+                        </p>
+                        <ul>
+                            <li><strong>Le Bois</strong> : Symbole de la croissance et de la créativité.</li>
+                            <li><strong>Le Feu</strong> : Symbole de la passion et de l'énergie.</li>
+                            <li><strong>La Terre</strong> : Symbole de la stabilité et de la fiabilité.</li>
+                            <li><strong>Le Métal</strong> : Symbole de la force et de la détermination.</li>
+                            <li><strong>L'Eau</strong> : Symbole de l'intuition et de la flexibilité.</li>
+                        </ul>
+                        <p>
+                            En combinant votre année de naissance avec l'élément correspondant, vous obtenez une analyse encore plus précise de votre personnalité et de votre destin. C'est une excellente façon d'explorer une autre facette de votre personnalité et de votre chemin de vie.
+                        </p>
+
+                        <!-- Correspondance avec l'astrologie occidentale -->
+                        <h3>Correspondance avec les Signes Occidentaux</h3>
+                        <p>
+                            L'astrologie chinoise et l'astrologie occidentale, bien que différentes, partagent des concepts de tempérament et de personnalité. Voici une correspondance approximative entre les signes du zodiaque chinois et les signes occidentaux :
+                        </p>
+                        <ul>
+                            <li><strong>Rat :</strong> Gémeaux et Sagittaire.</li>
+                            <li><strong>Bœuf :</strong> Capricorne et Taureau.</li>
+                            <li><strong>Tigre :</strong> Bélier et Scorpion.</li>
+                            <li><strong>Lapin :</strong> Poissons et Balance.</li>
+                            <li><strong>Dragon :</strong> Lion et Bélier.</li>
+                            <li><strong>Serpent :</strong> Scorpion et Vierge.</li>
+                            <li><strong>Cheval :</strong> Gémeaux et Sagittaire.</li>
+                            <li><strong>Chèvre :</strong> Poissons et Cancer.</li>
+                            <li><strong>Singe :</strong> Gémeaux et Verseau.</li>
+                            <li><strong>Coq :</strong> Vierge et Balance.</li>
+                            <li><strong>Chien :</strong> Balance et Verseau.</li>
+                            <li><strong>Cochon :</strong> Taureau et Poissons.</li>
+                        </ul>
+
+                        <!-- Calendrier des signes chinois -->
+                        <h3>Calendrier des Signes du Zodiaque Chinois</h3>
+                        <p>
+                            Trouvez votre signe en fonction de votre année de naissance. Notez que le Nouvel An Chinois se déroule entre fin janvier et mi-février, donc si vous êtes né à cette période, vérifiez bien la date exacte pour ne pas vous tromper de signe.
+                        </p>
+                        <ul>
+                            <li><strong>Rat :</strong> 1948, 1960, 1972, 1984, 1996, 2008, 2020</li>
+                            <li><strong>Bœuf :</strong> 1949, 1961, 1973, 1985, 1997, 2009, 2021</li>
+                            <li><strong>Tigre :</strong> 1950, 1962, 1974, 1986, 1998, 2010, 2022</li>
+                            <li><strong>Lapin :</strong> 1951, 1963, 1975, 1987, 1999, 2011, 2023</li>
+                            <li><strong>Dragon :</strong> 1952, 1964, 1976, 1988, 2000, 2012, 2024</li>
+                            <li><strong>Serpent :</strong> 1953, 1965, 1977, 1989, 2001, 2013, 2025</li>
+                            <li><strong>Cheval :</strong> 1954, 1966, 1978, 1990, 2002, 2014, 2026</li>
+                            <li><strong>Chèvre :</strong> 1955, 1967, 1979, 1991, 2003, 2015, 2027</li>
+                            <li><strong>Singe :</strong> 1956, 1968, 1980, 1992, 2004, 2016, 2028</li>
+                            <li><strong>Coq :</strong> 1957, 1969, 1981, 1993, 2005, 2017, 2029</li>
+                            <li><strong>Chien :</strong> 1958, 1970, 1982, 1994, 2006, 2018, 2030</li>
+                            <li><strong>Cochon :</strong> 1959, 1971, 1983, 1995, 2007, 2019, 2031</li>
+                        </ul>
+
+                        <!-- Affinités entre les signes chinois -->
+                        <h3>Affinités et Compatibilité des Signes Chinois</h3>
+                        <p>
+                            Dans l'astrologie chinoise, les signes s'entendent mieux avec certains animaux que d'autres, créant des dynamiques harmonieuses ou conflictuelles. Ces affinités se basent sur les triades d'harmonie et les relations d'amitié.
+                        </p>
+                        <ul>
+                            <li><strong>Meilleure compatibilité :</strong>
+                                <ul>
+                                    <li><strong>Rat</strong> s'entend bien avec le Dragon, le Singe et le Bœuf.</li>
+                                    <li><strong>Bœuf</strong> s'entend bien avec le Coq, le Serpent et le Rat.</li>
+                                    <li><strong>Tigre</strong> s'entend bien avec le Cheval et le Chien.</li>
+                                    <li><strong>Lapin</strong> s'entend bien avec la Chèvre et le Cochon.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Compatibilité moyenne :</strong>
+                                <ul>
+                                    <li>Les signes d'une même triade d'harmonie (par exemple : Tigre, Cheval, Chien) se soutiennent mutuellement.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Compatibilité à surveiller :</strong>
+                                <ul>
+                                    <li>Certains signes sont en opposition, comme le Rat et le Cheval, ou le Tigre et le Singe. Ces relations peuvent être plus complexes mais aussi très enrichissantes.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>
+                            Cette table est un guide général pour vous aider à comprendre les dynamiques entre les signes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+</body>
+
+                </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Events Section -->
+
+   
+
+
+
+   
+
+  </main><!-- End #main -->
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+            
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <!-- <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>inscrivez vous pour avoir les news</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>-->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MiroirAstral</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+     
+        Designed by <a href="https://miroirastral.com/">MiroirAstral Team</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+ <!-- scpit pour l'horoscope  -->
+<script src="index-script.js"></script>
+
+</body>
+
+</html>
